@@ -1,0 +1,590 @@
+﻿@using System.Data;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Property | Gallery</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link href="~/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="~/css/bootstrap.css" rel="stylesheet">
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="~/css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="~/css/nouislider.css">
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="~/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <!-- Theme color -->
+    <link id="switcher" href="~/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main style sheet -->
+    <link href="~/css/style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="#">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+
+
+
+<body>
+
+    <section id="aa-menu-area">
+
+        <nav class="navbar navbar-default main-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- LOGO -->
+                    <!-- Text based logo -->
+                    <a class="navbar-brand aa-logo"> Memaar <span>AlMorshdy</span></a>
+                    <!-- Image based logo -->
+                    <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
+                </div>
+
+            </div>
+        </nav>
+    </section>
+    <!-- end menu section -->
+    <!-- Start header section --------------------------->
+    <header id="aa-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-header-area">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="aa-header-left">
+                                    <div class="aa-telephone-no">
+                                        <span class="fa fa-phone"></span>
+                                        19086
+                                    </div>
+                                    <div class="aa-email hidden-xs">
+                                        <span class="fa fa-envelope-o"></span>  info@morshedy.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="aa-header-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header section -->
+    <!-- Start Proerty header --------------------------->
+    <section id="aa-property-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-property-header-inner">
+                        <h2>Zahra</h2>
+                        <ol class="breadcrumb">
+                            <li><a>HOME</a></li>
+                            <li><a>Gallery</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Proerty header  -->
+
+    <section id="aa-gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-gallery-area">
+                        <div class="aa-title">
+                            <h2>ZAHRA</h2>
+                            <span></span>
+                            <p>Zahra is a mega residential, touristic and hospitality development by Memaar Al Morshedy located at KM 124 on Egypt’s North Coast. It is only a stone’s throw either way from Hacienda Bay, a mere 15-minute drive from Al-Alamein Airport and overlooks the white sands and pristine waters of the Mediterranean.</p>
+                        </div>
+                        <!-- Start gallery -->
+                        <div class="aa-gallery-content">
+                            <div class="aa-gallery-top">
+                                <!-- Start gallery menu -->
+
+                                <ul class="filterCat1" id="filterCat1">
+                                    <li data-filter="all" class="filter active" id="all" onclick="displayfilter('all')">All</li>
+                                    <li data-filter=".Chalet" class="filter" id="Chalet" onclick="displayfilter('Chalet')">Chalet</li>
+                                    <li data-filter=".Duplex" class="filter " id="Duplex" onclick="displayfilter('Duplex')">Duplex</li>
+                                    <li data-filter=".TownHouse" class="filter" id="TownHouse" onclick="displayfilter('TownHouse')">TownHouse</li>
+                                </ul>
+
+                                <ul class="second2">
+                                    <li data-filter=".studio" class="studio" id="studio" onclick="secondrowfilter('studio')">Studio</li>
+                                    <li data-filter=".1" class="studio" id="1bed" onclick="secondrowfilter('1')">1 Bedroom</li>
+                                    <li data-filter=".2" class="studio" id="2bed" onclick="secondrowfilter('2')">2 Bedroom</li>
+                                    <li data-filter=".3" class="studio" id="3bed" onclick="secondrowfilter('3')">3 Bedroom</li>
+                                    <li data-filter=".4" class="studio" id="4bed" onclick="secondrowfilter('4')">4 Bedroom</li>
+                                    <li data-filter=".5" class="studio" id="5bed" onclick="secondrowfilter('5')">5 Bedroom</li>
+                                    <li data-filter=".6" class="studio" id="6bed" onclick="secondrowfilter('6')">6 Bedroom</li>
+                                </ul>
+                                <ul class="second2">
+                                    <li data-filter=".40" class="filter" id="40" onclick="onclickthirdrowfilter('40',newClass)">40 M<sup>2</sup></li>
+                                    <li data-filter=".45" class="filter" id="45" onclick="onclickthirdrowfilter('45',newClass)">45 M<sup>2</sup></li>
+                                    <li data-filter=".60" class="filter" id="60" onclick="onclickthirdrowfilter('60',newClass)">60 M<sup>2</sup></li>
+                                    <li data-filter=".75" class="filter" id="75" onclick="onclickthirdrowfilter('75',newClass)">75 M<sup>2</sup></li>
+                                    <li data-filter=".80" class="filter" id="80" onclick="onclickthirdrowfilter('80',newClass)">80 M<sup>2</sup></li>
+                                    <li data-filter=".95" class="filter" id="95" onclick="onclickthirdrowfilter('95',newClass)">95 M<sup>2</sup></li>
+                                    <li data-filter=".100" class="filter" id="100" onclick="onclickthirdrowfilter('100',newClass)">100 M<sup>2</sup></li>
+                                    <li data-filter=".115" class="filter" id="115" onclick="onclickthirdrowfilter('115',newClass)">115 M<sup>2</sup></li>
+                                    <li data-filter=".175" class="filter" id="175" onclick="onclickthirdrowfilter('175',newClass)">175 M<sup>2</sup></li>
+                                    <li data-filter=".220" class="filter" id="220" onclick="onclickthirdrowfilter('220',newClass)">220 M<sup>2</sup></li>
+                                    <li data-filter=".225" class="filter" id="225" onclick="onclickthirdrowfilter('225',newClass)">225 M<sup>2</sup></li>
+                                    <li data-filter=".150" class="filter" id="250" onclick="onclickthirdrowfilter('150',newClass)">250 M<sup>2</sup></li>
+
+
+                                </ul>
+
+
+                            </div>
+                            <!-- Start gallery image -->
+                            <div id="mixit-container" class="aa-gallery-body">
+                                <!-- start single gallery image -->
+
+                                @foreach (DataRow row in Model.Rows)
+                                {
+
+                                    <div class="aa-single-gallery mix @row["name"] @row["bedroom"] @row["unit_size"]">
+
+                                        <div class="aa-single-gallery-item">
+                                            <li style=" list-style-type: none">
+                                                <article class="aa-properties-item">
+                                                    <a class="aa-properties-item-img" href="~/Home/Property/@row["id"]">
+                                                        <img alt="img" src="~/img/test/@row["image"]">
+                                                    </a>
+
+                                                    <div class="aa-properties-item-content">
+                                                        <div class="aa-properties-info">
+                                                            <span>@row["bedroom"]Bedroom</span>
+                                                            <span>@row["bathroom"]Bathroom</span>
+                                                            <span>@row["unit_size"]Meter</span>
+                                                            <span>@row["garden_size"]</span>
+
+
+                                                        </div>
+                                                        <div class="aa-properties-about">
+                                                            <h3><a>@row["unit_desc"] </a></h3>
+                                                            <p>@row["title"]</p>
+                                                        </div>
+                                                        <div class="aa-properties-detial">
+                                                            <span class="aa-price">
+
+                                                            </span>
+                                                            <a class="aa-secondary-btn" href="~/Home/Property/@row["id"]">View Details</a>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                        </div>
+
+
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="aa-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-footer-area">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="aa-footer-left">
+                                    <p>Designed by <a rel="nofollow" href="https://emsegypt.net/">Egyptian Micro Solution</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="aa-footer-middle">
+                                    <a href="https://www.facebook.com/EgyptEMS"><i class="fa fa-facebook"></i></a>
+                                    <a href="http://www.emsegypt.net/"><i class="fa fa-globe"></i></a>
+                                    <a href="mailto:samsung.swoperation@emsegypt.net"><i class="fa fa-envelope"></i></a>
+                                    <a href="tel:01030146459"><i class="fa fa-mobile"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / Footer -->
+    <!-- jQuery library -================================================================->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="~/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/js/bootstrap.js"></script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="~/js/slick.js"></script>
+    <!-- Price picker slider -->
+    <script type="text/javascript" src="~/js/nouislider.js"></script>
+    <!-- mixit slider -->
+    <script type="text/javascript" src="~/js/jquery.mixitup.js"></script>
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="~/js/jquery.fancybox.pack.js"></script>
+    <!-- Custom js -->
+    <script src="~/js/custom.js"></script>
+    <!-- jQuery library ------------------------------------------------------->
+
+
+
+    <script>
+        /////////////////////////
+        var newClass = "";
+        var firstsecondthirdrow = "";
+        var x, y;
+        document.getElementById("6bed").style.display = "none";
+        document.getElementById("5bed").style.display = "none";
+        document.getElementById("4bed").style.display = "none";
+        document.getElementById("3bed").style.display = "none";
+        document.getElementById("2bed").style.display = "none";
+        document.getElementById("1bed").style.display = "none";
+        document.getElementById("studio").style.display = "none";
+        //////////////////////////////////////////////////////////
+        document.getElementById("40").style.display = "none";
+        document.getElementById("45").style.display = "none";
+        document.getElementById("60").style.display = "none";
+        document.getElementById("75").style.display = "none";
+        document.getElementById("80").style.display = "none";
+        document.getElementById("95").style.display = "none";
+        document.getElementById("100").style.display = "none";
+        document.getElementById("115").style.display = "none";
+        document.getElementById("175").style.display = "none";
+        document.getElementById("220").style.display = "none";
+        document.getElementById("225").style.display = "none";
+        document.getElementById("250").style.display = "none";
+        var header = document.getElementById("filterCat1");
+        var btns = header.getElementsByClassName("filter");
+        ////////////////////////
+        for (var i = 0; i < btns.length; i++)
+        {
+
+            btns[i].addEventListener("click", function ()
+            {
+                //////////////////////////////////////////// hna ana lesa 3nd all
+                var current = document.getElementsByClassName("active");
+
+                console.log("eli kan ma3ya >>", current[0].id);
+
+                current[0].className = current[0].className.replace(" active", "");/////////////hna eli da5l beh da3 meni eli hoa all bta3 awl mara khlas da3t shelt meno active
+                ///////////////////////////////////////////  hna da3t mni all w ma3esh haga
+                this.className += " active";/////////////hna olt eli ana dost 3leh zawd 3leh active
+                x = current[0].id;
+                console.log("eli ma3ya dlw2tye>>", x);////////////fa hna khlas ma3ya eli dost 3leh
+                if (x == "Chalet") {
+                    document.getElementById("6bed").style.display = "none";
+                    document.getElementById("5bed").style.display = "none";
+                    document.getElementById("4bed").style.display = "";
+                    document.getElementById("3bed").style.display = "";
+                    document.getElementById("2bed").style.display = "";
+                    document.getElementById("1bed").style.display = "";
+                    document.getElementById("studio").style.display = "none";
+                    //////////////////////////////////////////////////////////
+                    document.getElementById("40").style.display = "none";
+                    document.getElementById("45").style.display = "none";
+                    document.getElementById("60").style.display = "none";
+                    document.getElementById("75").style.display = "none";
+                    document.getElementById("80").style.display = "none";
+                    document.getElementById("95").style.display = "none";
+                    document.getElementById("100").style.display = "none";
+                    document.getElementById("115").style.display = "none";
+                    document.getElementById("175").style.display = "none";
+                    document.getElementById("220").style.display = "none";
+                    document.getElementById("225").style.display = "none";
+                    document.getElementById("250").style.display = "none";
+
+                    document.getElementById("all").style.display = "none";
+                }
+                else if (x == "Duplex") {
+                    document.getElementById("all").style.display = "none";
+
+                    document.getElementById("6bed").style.display = "none";
+                    document.getElementById("5bed").style.display = "";
+                    document.getElementById("4bed").style.display = "";
+                    document.getElementById("3bed").style.display = "none";
+                    document.getElementById("2bed").style.display = "none";
+                    document.getElementById("1bed").style.display = "none";
+                    document.getElementById("studio").style.display = "none";
+                    //////////////////////////////////////////////////////////
+                    document.getElementById("40").style.display = "none";
+                    document.getElementById("45").style.display = "none";
+                    document.getElementById("60").style.display = "none";
+                    document.getElementById("75").style.display = "none";
+                    document.getElementById("80").style.display = "none";
+                    document.getElementById("95").style.display = "none";
+                    document.getElementById("100").style.display = "none";
+                    document.getElementById("115").style.display = "none";
+                    document.getElementById("175").style.display = "none";
+                    document.getElementById("220").style.display = "none";
+                    document.getElementById("225").style.display = "none";
+                    document.getElementById("250").style.display = "none";
+
+                    document.getElementById("all").style.display = "none";
+
+                }
+                if (x == "TownHouse") {
+                    document.getElementById("all").style.display = "none";
+
+                    document.getElementById("6bed").style.display = "";
+                    document.getElementById("5bed").style.display = "";
+                    document.getElementById("4bed").style.display = "none";
+                    document.getElementById("3bed").style.display = "none";
+                    document.getElementById("2bed").style.display = "none";
+                    document.getElementById("1bed").style.display = "none";
+                    document.getElementById("studio").style.display = "none";
+                    //////////////////////////////////////////////////////////
+                    document.getElementById("40").style.display = "none";
+                    document.getElementById("45").style.display = "none";
+                    document.getElementById("60").style.display = "none";
+                    document.getElementById("75").style.display = "none";
+                    document.getElementById("80").style.display = "none";
+                    document.getElementById("95").style.display = "none";
+                    document.getElementById("100").style.display = "none";
+                    document.getElementById("115").style.display = "none";
+                    document.getElementById("175").style.display = "none";
+                    document.getElementById("220").style.display = "none";
+                    document.getElementById("225").style.display = "none";
+                    document.getElementById("250").style.display = "none";
+
+                    document.getElementById("all").style.display = "none";
+                }
+           
+            }
+            );
+        }
+        /////////////////////////////////////////////////
+        function secondrowfilter(c) {
+
+
+            newClass = x + " " + c;
+            console.log("tany row  >> ", newClass);
+
+            displayfilter(newClass);
+            if (c == "1")
+            {
+                document.getElementById("40").style.display = "";
+                document.getElementById("45").style.display = "";
+                document.getElementById("60").style.display = "none";
+                document.getElementById("75").style.display = "none";
+                document.getElementById("80").style.display = "none";
+                document.getElementById("95").style.display = "none";
+                document.getElementById("100").style.display = "none";
+                document.getElementById("115").style.display = "none";
+                document.getElementById("175").style.display = "none";
+                document.getElementById("220").style.display = "none";
+                document.getElementById("225").style.display = "none";
+                document.getElementById("250").style.display = "none";
+            }
+            if (c == "2")
+            {
+                document.getElementById("40").style.display = "none";
+                document.getElementById("45").style.display = "none";
+                document.getElementById("60").style.display = "";
+                document.getElementById("75").style.display = "none";
+                document.getElementById("80").style.display = "";
+                document.getElementById("95").style.display = "none";
+                document.getElementById("100").style.display = "none";
+                document.getElementById("115").style.display = "none";
+                document.getElementById("175").style.display = "none";
+                document.getElementById("220").style.display = "none";
+                document.getElementById("225").style.display = "none";
+                document.getElementById("250").style.display = "none";
+            }
+            if (c == "3") {
+                document.getElementById("40").style.display = "none";
+                document.getElementById("45").style.display = "none";
+                document.getElementById("60").style.display = "none";
+                document.getElementById("75").style.display = "";
+                document.getElementById("80").style.display = "none";
+                document.getElementById("95").style.display = "";
+                document.getElementById("100").style.display = "";
+                document.getElementById("115").style.display = "none";
+                document.getElementById("175").style.display = "none";
+                document.getElementById("220").style.display = "none";
+                document.getElementById("225").style.display = "none";
+                document.getElementById("250").style.display = "none";
+            }
+            if (c == "4" && x== "Chalet" )
+            {
+                document.getElementById("40").style.display = "none";
+                document.getElementById("45").style.display = "none";
+                document.getElementById("60").style.display = "none";
+                document.getElementById("75").style.display = "none";
+                document.getElementById("80").style.display = "none";
+                document.getElementById("95").style.display = "none";
+                document.getElementById("100").style.display = "none";
+                document.getElementById("115").style.display = "";
+                document.getElementById("175").style.display = "none";
+                document.getElementById("220").style.display = "none";
+                document.getElementById("225").style.display = "none";
+                document.getElementById("250").style.display = "none";
+            }
+            if (c == "4" && x == "Duplex") {
+                document.getElementById("40").style.display = "none";
+                document.getElementById("45").style.display = "none";
+                document.getElementById("60").style.display = "none";
+                document.getElementById("75").style.display = "none";
+                document.getElementById("80").style.display = "none";
+                document.getElementById("95").style.display = "none";
+                document.getElementById("100").style.display = "none";
+                document.getElementById("115").style.display = "none";
+                document.getElementById("175").style.display = "";
+                document.getElementById("220").style.display = "none";
+                document.getElementById("225").style.display = "none";
+                document.getElementById("250").style.display = "none";
+            }
+            if (c == "5"&& x=="Duplex") {
+                document.getElementById("40").style.display = "none";
+                document.getElementById("45").style.display = "none";
+                document.getElementById("60").style.display = "none";
+                document.getElementById("75").style.display = "none";
+                document.getElementById("80").style.display = "none";
+                document.getElementById("95").style.display = "none";
+                document.getElementById("100").style.display = "none";
+                document.getElementById("115").style.display = "none";
+                document.getElementById("175").style.display = "none";
+                document.getElementById("220").style.display = "";
+                document.getElementById("225").style.display = "none";
+                document.getElementById("250").style.display = "none";
+            }
+            if (c == "5" && x == "TownHouse") {
+                document.getElementById("40").style.display = "none";
+                document.getElementById("45").style.display = "none";
+                document.getElementById("60").style.display = "none";
+                document.getElementById("75").style.display = "none";
+                document.getElementById("80").style.display = "none";
+                document.getElementById("95").style.display = "none";
+                document.getElementById("100").style.display = "none";
+                document.getElementById("115").style.display = "none";
+                document.getElementById("175").style.display = "none";
+                document.getElementById("220").style.display = "none";
+                document.getElementById("225").style.display = "";
+                document.getElementById("250").style.display = "none";
+            }
+            if (c == "6") {
+                document.getElementById("40").style.display = "none";
+                document.getElementById("45").style.display = "none";
+                document.getElementById("60").style.display = "none";
+                document.getElementById("75").style.display = "none";
+                document.getElementById("80").style.display = "none";
+                document.getElementById("95").style.display = "none";
+                document.getElementById("100").style.display = "none";
+                document.getElementById("115").style.display = "none";
+                document.getElementById("175").style.display = "none";
+                document.getElementById("220").style.display = "none";
+                document.getElementById("225").style.display = "none";
+                document.getElementById("250").style.display = "";
+            }
+
+
+
+
+
+        }
+        /////////////////////////////////////////////////
+        function onclickthirdrowfilter(c, newClass)
+        {
+            console.log("c", c);
+            console.log("new class", newClass);
+
+            firstsecondthirdrow = newClass + " " + c;
+            console.log("first+second+third row >> ", firstsecondthirdrow);
+
+            displayfilter(firstsecondthirdrow);
+
+
+        }
+        function displayfilter(c)
+        {
+
+            var header = document.getElementById("mixit-container");
+            var btns = header.getElementsByClassName("mix");
+
+
+            for (var i = 0; i < btns.length; i++)
+            {
+                var y = btns[i].className;
+
+                var div = document.getElementsByClassName(y);
+                if (c == 'all')
+                {
+                    $(div).removeClass("hidden");
+                    $(div).addClass("display");
+                }
+                if (c == 'all2')
+                {
+                    $(div).addClass("hidden");
+                    $(div).addClass("display");
+
+                }//chalet==chalet
+                if (!y.includes(c))
+                {
+                    $(div).addClass("hidden");
+                }
+                else
+                {
+
+                    $(div).removeClass("hidden");
+                    $(div).addClass("display");
+                    console.log("gowa>>", $(div).className);
+
+
+                }
+            }
+            console.log("print_Display>>", c);
+
+
+
+        }
+/////////////////////////////////////////////////
+    </script>
+
+
+
+
+</body>
+</html>
+
+<style>
+    .hidden {
+        display: none;
+    }
+
+    .display {
+        display: block;
+    }
+</style>
